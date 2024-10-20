@@ -1,6 +1,5 @@
-package infrastructure;
+package com.glauco.codeflix.infrastructure;
 
-import com.glauco.codeflix.infrastructure.Main;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.env.AbstractEnvironment;
 

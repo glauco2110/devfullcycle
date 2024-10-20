@@ -1,4 +1,4 @@
-package infrastructure;
+package com.glauco.codeflix.infrastructure;
 
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -4,6 +4,7 @@ import com.glauco.codeflix.domain.AggregateRoot;
 import com.glauco.codeflix.domain.validation.ValidationHandler;
 
 import java.time.Instant;
+import java.util.Objects;
 
 public class Category extends AggregateRoot<CategoryID> implements Cloneable{
     private String name;
@@ -26,8 +27,8 @@ public class Category extends AggregateRoot<CategoryID> implements Cloneable{
         this.name = name;
         this.description = description;
         this.active = active;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
+        this.createdAt = Objects.requireNonNull(createdAt, "'createdAt' cannot be null");
+        this.updatedAt = Objects.requireNonNull(updatedAt, "'updatedAt' cannot be null");
         this.deletedAt = deletedAt;
     }
 
